@@ -103,6 +103,12 @@ def get_second_column_index(line):
     if idx_second_col < 40:
         idx_second_col = line.rfind("Pagamento")
 
+    if idx_second_col < 40:
+        idx_second_col = line.rfind("Encargos")
+
+    if idx_second_col < 40:
+        idx_second_col = line.rfind("Parcelas")
+
     return idx_second_col
 
 
